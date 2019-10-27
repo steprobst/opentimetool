@@ -1,5 +1,5 @@
 2.7.0
-- ported to php 7.3, requires now php >= 7.1
+- ported to php 7.x, requires now php >= 7.3
 - bugfixes and code cleanup
 - switched from mysql to mysqli driver (check your config-local.php !)
 - empty everything except .htaccess below htdocs/tmp on update!

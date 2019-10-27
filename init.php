@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * $Id: init.php 123 2019-09-03 15:03:36Z munix9 $
+ * $Id: init.php 125 2019-09-20 16:26:48Z munix9 $
  * 
  * Beside config.php the central code which will be run through with each server
  * round trip !
@@ -135,7 +135,7 @@ if (!$config->isLiveMode()) {
     //$logging->_logme('init (new)SID: ', print_r(session_id(), true));
 }
 
-$lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : 'en';
+$lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : null;
 $config->langHandler($lang);
 // save the current language in the session
 $_SESSION['lang'] = $lang;
