@@ -204,7 +204,7 @@ class vp_Validation
         if( $required && !self::isMinLength( $var, 1 ) )
             return false;
 
-        if( preg_match("/^[_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.)+[a-z]{2,4}$/i", $var) )
+        if( preg_match("/^[_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.)+[a-z]{2,6}$/i", $var) )
         {
             return true;
         }
