@@ -10,7 +10,7 @@
  * 
  */
 
-if (version_compare(PHP_VERSION, '7.1.0', '<')) {
+if (version_compare(PHP_VERSION, '7.0.0', '<')) {
     echo '<pre>The PHP version is too old: ' . PHP_VERSION . "\n";
     echo 'https://secure.php.net/supported-versions.php</pre>';
     die();
